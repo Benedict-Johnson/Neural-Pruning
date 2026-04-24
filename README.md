@@ -133,8 +133,3 @@ CIFAR-10 (~170 MB) downloads automatically on first run into `./data/`. Results 
 - **Gate scores polarize over training.** Even without strong regularization, many gate scores drift toward saturation (near 0 or 1), suggesting the network naturally identifies low-utility connections.
 - **λ is the primary control knob.** The ratio of sparse to active weights is highly sensitive to λ, making it the most important hyperparameter for balancing model compression and task performance.
 
----
-
-## License
-
-MIT
