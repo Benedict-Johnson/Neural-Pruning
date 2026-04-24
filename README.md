@@ -85,11 +85,11 @@ The sparsity term penalizes active gates, pushing them toward zero and pruning t
 
 | Lambda | Accuracy | Sparsity |
 |--------|----------|----------|
-| 0      | XX%      | XX%      |
-| 1e-5   | XX%      | XX%      |
-| 1e-4   | XX%      | XX%      |
+| 0      | 50.97%   | 0.00%    |
+| 1e-5   | 52.46%   | 0.00%    |
+| 1e-4   | 51.93%   | 0.00%    |
 
-*Sparsity = % of weights where `sigmoid(gate_score) < 0.01`*
+*Sparsity = % of weights where `sigmoid(gate_score) < 0.01`. Gates require more epochs to saturate toward zero — sparsity is expected to increase significantly with longer training or larger λ values.*
 
 ---
 
